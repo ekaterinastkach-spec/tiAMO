@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+
+
+    <!-- Bootstrap Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500;700&family=Lato:wght@300;400;700&family=Playfair+Display:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body class="my-color my-bg-color">
+
+<!--navbar-->
+
+<div class="container-fluid">
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="img/logo2.png" alt="Bootstrap" width="120" height="120" style="color:#6d6d36;">
+            </a>
+            <!--    <a class="navbar-brand" href="#">Navbar</a>-->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mx-auto gap-1 gap-md-5 tiAmo" style="font-size:14px;"> <!--mx-auto mb-2 mb-lg-0-->
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" aria-current="page" href="#">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#">Меню</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#">Галерея</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#">Контакты</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link nav-link-custom" href="#">Доставка</a>
+                    </li>
+                </ul>
+
+                <button class="btn text-white shadow btn-dynamic" style="background-color:#6d6d36;">Заказать столик</button>
+            </div>
+        </div>
+    </nav>
+
+</div>
+
+<!--hero-->
+
+<div class="container-fluid  d-flex justify-content-center">
+    <div class="row">
+
+        <div class="col-12 col-md-3 col-lg-3">
+            <p class="text-start mt-5 ms-5 tiAmo" style="font-size:80px;">Ti AMO</p>
+            <p class="text-start ms-5 mt-3 fs-4 fst-italic tiAmo">СЕМЕЙНОЕ КАФЕ</p>
+
+            <p class="text-start m-5 fs-5 fst-italic tiAmo">Место, где вкусно взрослым и весело детям</p>
+
+            <!--<p class="text-start mt-5 ms-5 fs-6 fst-italic">ул. Вальченко 39/1</p>
+            <p class="text-start ms-5 fs-6 fst-italic">+(373) 777-00-00</p>-->
+
+
+        </div>
+
+        <div class="col-12 col-md-9 col-lg-9 ">
+            <div class="photo-wrapper">
+            <img class="img-fluid"
+                 src="img/main2.png"
+                 alt="">
+            </div>
+        </div>
+    </div>
+</div>
+
+<!--наши блюда-->
+
+<h2 class="text-center m-5 fw-bold fst-italic tiAmo">
+    Наши блюда
+</h2>
+
+<div class="container p-4 fst-italic tiAmo">
+    <div class="row row-cols-1 row-cols-md-4 row-cols-sm-3 row-cols-xs-3 g-4">
+        <div class="col">
+            <div class="card h-100 my-color my-bg-color">
+                <img src="img/food/2/pizza.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title ">Пицца</h4>
+                    <p class="card-text">Для любого настроения</p>
+                    <button type="button" class="btn btn-light my-bg-color"><i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 my-color my-bg-color">
+                <img src="img/food/2/pasta.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Паста</h4>
+                    <p class="card-text">Сытно и разнообразно</p>
+                    <button type="button" class="btn btn-light my-bg-color"><i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 my-color my-bg-color">
+                <img src="img/food/2/breakfast.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Завтраки</h4>
+                    <p class="card-text">Вкусное начало вашего дня</p>
+                    <button type="button" class="btn btn-light my-bg-color"><i class="bi bi-arrow-right"></i></button>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card h-100 my-color my-bg-color">
+                <img src="img/food/2/dessert.png" class="card-img-top" alt="...">
+                <div class="card-body">
+                    <h4 class="card-title">Десерты</h4>
+                    <p class="card-text">Сладкое удовольствие для всей семьи</p>
+                    <button type="button" class="btn btn-light my-bg-color"><i class="bi bi-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="container-fluid  d-flex justify-content-center tiAmo">
+    <button class="btn text-white shadow btn-dynamic" style="background-color:#6d6d36;">Посмотреть полное меню</button>
+</div>
+
+<!--разделы2-->
+
+<div class="container-fluid  d-flex justify-content-center mt-5 tiAmo">
+    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-cols-xl-5 g-4 text-center justify-content-center">
+        <div class="col">
+            <a href="#" class="text-decoration-none text-dark">
+                <div class="card h-70 my-bg-color border-0 my-color">
+                    <img src="img/sections/ev-removebg-preview.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ТЕМАТИЧЕСКИЕ ВЕЧЕРА</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" class="text-decoration-none text-dark">
+                <div class="card h-70 my-bg-color border-0 my-color">
+                    <img src="img/sections/ch-removebg-preview.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">МАСТЕР-КЛАССЫ ДЛЯ ДЕТЕЙ</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" class="text-decoration-none text-dark">
+                <div class="card h-70 my-bg-color border-0 my-color">
+                    <img src="img/sections/gal-removebg-preview.png" class="img-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ГАЛЕРЕЯ</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+        <div class="col">
+            <a href="#" class="text-decoration-none text-dark">
+                <div class="card h-70 my-bg-color border-0 my-color">
+                    <img src="img/sections/ms-removebg-preview.png" class="mg-fluid" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">ОТЗЫВЫ</h5>
+                    </div>
+                </div>
+            </a>
+        </div>
+    </div>
+</div>
+
+
+<!--карта-->
+
+<!--<div class="container mt-5">
+    <div class="card-group">
+        <div class="card my-bg-color border-0 p-4 h-100 d-flex flex-column">
+
+            <h5 class="card-title mb-4">
+                МЫ ЖДЕМ ВАС
+            </h5>
+
+            <div class="flex-grow-1 d-flex flex-column">
+
+                <p class="card-text mb-3">
+                    <i class="bi bi-geo-alt-fill">   </i>
+                    ул. Вальченко 39/1
+                </p>
+
+                <p class="card-text mb-3">
+                    <i class="bi bi-telephone-fill">   </i>
+                    0777 77 77
+                </p>
+
+            </div>
+
+            <button class="btn text-white shadow mt-3"
+                    style="background-color:#6d6d36;">
+                Построить маршрут
+            </button>
+
+        </div>
+        <div class="card my-bg-color border-0 h-100 d-flex flex-column">
+            <img src="img/map.png" class="card-img-top" alt="...">
+
+        </div>
+        <div class="card my-bg-color border-0 p-4 h-100 d-flex flex-column">
+            <h5 class="card-title mb-4">
+                РЕЖИМ РАБОТЫ
+            </h5>
+
+            <div class="flex-grow-1 d-flex flex-column">
+
+                <p class="card-text mb-3">
+                    <i class="bi bi-sun">   </i>
+                    ПН - ВС<br>
+                    09.00 - 23.00
+                </p>
+
+                <p class="card-text mb-3">
+                    <i class="bi bi-snow2">   </i>
+                    ПН - ВС<br>
+                    09.00 - 23.00
+                </p>
+
+            </div>
+
+        </div>
+    </div>
+</div>-->
+
+<div class="container mt-5 secondTiAmo">
+    <div class="row g-0">
+
+        <!-- Левая карточка -->
+        <div class="col-12 col-md-2 d-flex">
+            <div class="card p-4 text-center h-100 w-100 d-flex flex-column my-bg-color border-0 my-color">
+
+
+
+                <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                    <h5 class="card-title mb-4">МЫ ЖДЕМ ВАС</h5>
+                    <p class="card-text mb-4">
+                        <i class="bi bi-geo-alt-fill m-1"></i> ул. Вальченко 39/1
+                        <i class="bi bi-telephone-fill m-1"></i> 0777 77 77
+                    </p>
+                </div>
+
+                <button class="btn text-white shadow mt-auto"
+                        style="background-color:#6d6d36;">
+                    Построить маршрут
+                </button>
+
+            </div>
+        </div>
+
+        <!-- Центральная карточка -->
+        <div class="col-12 col-md-8 d-flex">
+            <div class="card h-100 w-100 border-0">
+                <img src="img/map2.png"
+                     class="img-fluid h-100 w-100"
+                     style="object-fit: cover;"
+                     alt="">
+            </div>
+        </div>
+
+        <!-- Правая карточка -->
+        <div class="col-12 col-md-2 d-flex">
+            <div class="card p-4 text-center h-100 w-100 d-flex flex-column justify-items-center my-bg-color border-0 my-color">
+
+
+                <div class="flex-grow-1 d-flex flex-column justify-content-center">
+                    <h5 class="card-title mb-4 ">График работы</h5>
+                    <p class="card-text">
+                        <i class="bi bi-sun fs-3"></i> Пн–Вс 10:00–23:00<br>
+                        <i class="bi bi-snow2 fs-3"></i> Пн–Вс 10:00–22:00
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+<!--footer-->
+
+<footer class="py-5 mt-5 secondTiAmo" style="background-color:#5a5a2c; color:white;">
+
+    <div class="container">
+
+        <div class="row g-4">
+
+            <!-- Логотип -->
+            <div class="col-12 col-md-6 col-lg-3 text-center text-lg-start">
+                <img src="img/logo.png"
+                     class="img-fluid mb-3"
+                     style="max-width:180px;"
+                     alt="Logo">
+
+                <p>
+                    Уютное место для встреч,<br>
+                    вкусной еды и <br>хорошего настроения.
+                </p>
+            </div>
+
+
+            <!-- Навигация -->
+            <div class="col-12 col-md-6 col-lg-3">
+                <h5 class="mb-3">Навигация</h5>
+
+                <ul class="list-unstyled">
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-custom">
+                            Главная
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-custom">
+                            Меню
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-custom">
+                            О нас
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-custom">
+                            Галерея
+                        </a>
+                    </li>
+
+                    <li class="mb-2">
+                        <a href="#" class="text-white text-decoration-none nav-link-custom">
+                            Контакты
+                        </a>
+                    </li>
+                </ul>
+
+            </div>
+
+
+            <!-- Контакты -->
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <h5 class="mb-3">Контакты</h5>
+
+                <p class="mb-2">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    г. Рыбница,<br>
+                    ул. Вальченко 39/1
+                </p>
+
+                <p class="mb-2">
+                    <i class="bi bi-telephone-fill"></i>
+                   + (373) 7777777
+                </p>
+
+
+            </div>
+
+
+            <!-- Соцсети -->
+            <div class="col-12 col-md-6 col-lg-3">
+
+                <h5 class="mb-3">Мы в соцсетях</h5>
+
+                <a href="#" class="text-white fs-3 me-3">
+                    <i class="bi bi-instagram social-icon"></i>
+                </a>
+
+            </div>
+
+        </div>
+
+
+        <hr class="mt-4">
+
+        <div class="text-center">
+            <small>
+                © 2026
+            </small>
+        </div>
+
+    </div>
+
+</footer>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+            crossorigin="anonymous"></script>
+</body>
+
+</html>
