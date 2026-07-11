@@ -2,33 +2,11 @@
     position: relative;
 }
 
-/*
-.image-wrap::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100px;      */
-/* ширина градиента *//*
-
-    height: 100%;
-    background: linear-gradient(
-        to right,
-        #fff 0%, #fff 50%,
-        rgba(255, 255, 255, 0) 100%
-    );
-    pointer-events: none;
-}
-*/
-
-/*body{
-    background-color: #f5eee6;
-}*/
 .my-bg-color{
     background-color: #f5eee6;
 }
 
-.my-color{
+.my-color, .nav-link{
    color: #6d6d36;
 }
 
@@ -172,12 +150,42 @@
         0 0 25px rgba(109,109,54,.9);
 }
 
-/* Название кафе */
+
+/* Логотип */
 .tiAmo {
-    font-family: 'Dancing Script', cursive;
+    font-family: 'Allura', cursive;
 }
 
 /* Заголовки */
-.secondTiAmo {
-    font-family: 'Playfair Display', serif;
+secondTiAmo {
+    font-family: 'Cormorant Garamond', serif;
+}
+
+/* Основной текст */
+thTiAmo {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.menu-sticky {
+    position: sticky;
+    top: 100px; /* отступ от верхней части экрана */
+}
+
+.navbar {
+    background-color: #f5eee6;
+    z-index: 1020;
+}
+
+#breakfast,
+#salad,
+#desserts {
+    scroll-margin-top: 140px;
+}
+
+@media (max-width: 991.98px) {
+    #breakfast,
+    #salad,
+    #desserts {
+        scroll-margin-top: 200px;
+    }
 }
