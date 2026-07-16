@@ -1,3 +1,48 @@
+.menu-font {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+  font-size: 24px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.menu-familyCafe {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-size: 18px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+.menu-familyCafe2 {
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-weight:400;
+  font-style: normal;
+  font-size: 24px;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+  font-style: italic;
+}
+
+.dm-sans-address {
+  font-family: "DM Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.lora-address {
+  font-family: "Lora", serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.4);
+}
+
+
+
 .image-wrap {
     position: relative;
 }
@@ -7,7 +52,7 @@
 }
 
 .my-color, .nav-link{
-   color: #6d6d36;
+   color:   #6d6d36; /*#FFFDD0;*/
 }
 
 .card-img-top {
@@ -153,18 +198,22 @@
 
 /* Логотип */
 .tiAmo {
-    font-family: 'Allura', cursive;
+     font-family: "Cormorant Garamond", serif;
+      font-optical-sizing: auto;
+      font-weight: 500;
+      font-style: normal;
+      text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
 /* Заголовки */
-secondTiAmo {
+/*.secondTiAmo {
     font-family: 'Cormorant Garamond', serif;
-}
+}*/
 
 /* Основной текст */
-thTiAmo {
+/*.thTiAmo {
     font-family: 'Montserrat', sans-serif;
-}
+}*/
 
 .menu-sticky {
     position: sticky;
