@@ -10,125 +10,158 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300..700;1,300..700&family=Dancing+Script:wght@400..700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Lora:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&display=swap" rel="stylesheet">
+
     <link rel="stylesheet" href="css/index.css">
 </head>
 
-<body class="my-color my-bg-color">
+<body class="my-bg-color">
 
 <!--navbar-->
+<div class="container-fluid  fst-italic lora-address" style="font-size:18px;">
 
-    <nav class="navbar navbar-expand-lg sticky-top shadow-sm fst-italic lora-address" style="font-size:18px;">
-        <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="img/logo7.png" alt="Bootstrap" width="130" height="110" style="color:#6d6d36;">
-            </a>
-            <!--    <a class="navbar-brand" href="#">Navbar</a>-->
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                <ul class="navbar-nav mx-auto gap-1 gap-md-5 text-center" > <!--mx-auto mb-2 mb-lg-0-->
-                    <li class="nav-item">
-                        <a class="nav-link" aria-current="page" href="index.html">Главная</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#breakfast">Завтраки</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Первые блюда</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Холодные закуски</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Мясо<br>Рыба</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#salad">Салаты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Паста</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Гарнины</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#desserts">Десерты</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Добавки</a>
-                    </li>
-                </ul>
-
-
-            </div>
+    <nav class="navbar navbar-expand-lg">
+        <a class="navbar-brand mx-5 px-4" href="#">
+            <img src="img/logo7.png" alt="Bootstrap" width="130" height="110" style="color:#6d6d36;">
+        </a>
+        <!--    <a class="navbar-brand" href="#">Navbar</a>-->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav flex-grow-1 justify-content-between align-items-center"> <!--mx-auto mb-2 mb-lg-0-->
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" aria-current="page" href="index.html">Главная</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#breakfast">Завтраки</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Первые блюда</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Холодные закуски</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Мясо<br>Рыба</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#salad">Салаты</a>
+                </li>
+                <li class="nav-item nav-link-custom">
+                    <a class="nav-link" href="#">Паста</a>
+                </li>
+                <li class="nav-item nav-link-custom">
+                    <a class="nav-link" href="#">Гарнины</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#desserts">Десерты</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link nav-link-custom" href="#">Добавки</a>
+                </li>
+            </ul>
         </div>
     </nav>
-
+</div>
 
 <!--меню-->
 
 
-<h2 class="text-center m-5 fw-bold fst-italic secondTiAmo ">
+<h2 class="text-center fw-bold fst-italic lora-address mt-3">
     Меню
 </h2>
 
 
-<div class="container text-center ">
+<div class="container text-center fst-italic lora-address">
     <div class="row justify-content-center ">
 
         <div class="col-12 col-md-12 col-lg-12">
-            <h2 class="text-center m-5 fw-bold fst-italic secondTiAmo " id="breakfast">
+            <h2 class="text-center m-5 fw-bold" id="breakfast">
                 Завтраки
             </h2>
             <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/breakfast/omelette.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Омлет по французски с беконом и сыром</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/breakfast/omelette.webp" class="card-img-top" alt="Омлет">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Омлет по-французски с беконом и сыром</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Воздушный омлет с хрустящим беконом и расплавленным сыром.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">95 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/breakfast/omelette2.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Омлет по французски с куринным филе, шпинат и  сыр</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/breakfast/omelette2.webp" class="card-img-top" alt="Омлет">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Омлет по-французски с куриным филе, шпинатом и сыром</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Нежный омлет с куриным филе, свежим шпинатом и сливочным сыром.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">105 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/breakfast/syrniki.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Сырники с джемом из черной смородины (выбор топинга)</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/breakfast/syrniki.webp" class="card-img-top" alt="Сырники">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Сырники с джемом из черной смородины</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Домашние сырники с выбором топинга и ароматным ягодным джемом.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">90 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/breakfast/FlourPorridge.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Овеянная каша (вода либо молоко)  </h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/breakfast/FlourPorridge.webp" class="card-img-top" alt="Каша">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Овсяная каша</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Нежная овсяная каша на воде или молоке с добавками на выбор.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">65 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/breakfast/englishBreakfast.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Английский завтрак</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/breakfast/englishBreakfast.webp" class="card-img-top" alt="Английский завтрак">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Английский завтрак</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Яйца, бекон, сосиски, овощи, фасоль и хрустящие тосты.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">150 ₽</p>
                         </div>
                     </div>
                 </div>
+
             </div>
             <h2 class="text-center m-5 fw-bold fst-italic secondTiAmo " id="salad">
                 Салаты
@@ -136,55 +169,88 @@
             <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4 mt-2">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/cesar.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Цезарь с курицей и пармезаном</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/cesar.webp" class="card-img-top" alt="Цезарь">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Цезарь с курицей и пармезаном</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Куриное филе, салат, пармезан, сухарики и фирменный соус.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">160 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/cesarShramp.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Цезарь с креветкой и пармезаном</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/cesarShramp.webp" class="card-img-top" alt="Цезарь с креветкой">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Цезарь с креветкой и пармезаном</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Креветки, свежий салат, пармезан, сухарики и соус Цезарь.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">220 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/GreekSalad.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Салат греческий с сыром фета</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/GreekSalad.webp" class="card-img-top" alt="Греческий салат">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Греческий салат с сыром фета</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Свежие овощи, маслины, сыр фета и оливковая заправка.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">140 ₽</p>
                         </div>
                     </div>
                 </div>
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/Salad with avocado and salmon.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Салат с авокадо и лососем</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/Salad with avocado and salmon.webp" class="card-img-top" alt="Салат с авокадо">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Салат с авокадо и лососем</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Нежный лосось, авокадо, свежие овощи и легкая заправка.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">240 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/Warm salad with veal and vegetables.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Теплый салат с телятиной и овощами</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/Warm salad with veal and vegetables.webp" class="card-img-top" alt="Теплый салат">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Теплый салат с телятиной и овощами</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Обжаренная телятина, свежие овощи и ароматная теплая заправка.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">230 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/salat/Nicoise.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Нисуаз</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/salat/Nicoise.webp" class="card-img-top" alt="Нисуаз">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Нисуаз</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Классический французский салат с тунцом, овощами и яйцом.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">210 ₽</p>
                         </div>
                     </div>
                 </div>
@@ -192,40 +258,62 @@
             <h2 class="text-center m-5 fw-bold fst-italic secondTiAmo " id="desserts">
                 Десерты
             </h2>
-            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-3 g-4 mt-2">
+            <div class="row row-cols-1 row-cols-sm-2 row-cols-xl-4 g-4 mt-2">
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/desserts/Tiramisu.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Тирамису</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/desserts/Tiramisu.webp" class="card-img-top" alt="Тирамису">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Тирамису</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Итальянский десерт с кремом маскарпоне, кофе и нежным какао.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">130 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/desserts/Chocolate fondant with ice cream.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Шоколадный фондан с мороженным </h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/desserts/Chocolate fondant with ice cream.webp" class="card-img-top" alt="Фондан">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Шоколадный фондан с мороженым</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Теплый шоколадный десерт с жидкой начинкой и шариком мороженого.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">150 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/desserts/Fruit salad.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Фруктовый салат </h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/desserts/Fruit salad.webp" class="card-img-top" alt="Фруктовый салат">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Фруктовый салат</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Ассорти из свежих сезонных фруктов.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">110 ₽</p>
                         </div>
                     </div>
                 </div>
+
+
                 <div class="col">
                     <div class="card h-100">
-                        <img src="img/menu/desserts/icecream.webp" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">Мороженное</h5>
-                            <p class="card-text"></p>
+                        <img src="img/menu/desserts/icecream.webp" class="card-img-top" alt="Мороженое">
+                        <div class="card-body text-center d-flex flex-column">
+                            <h5 class="card-title mb-2">Мороженое</h5>
+                            <p class="card-text text-muted small mb-3 flex-grow-1">
+                                Нежное сливочное мороженое с добавками на выбор.
+                            </p>
+                            <hr class="my-3">
+                            <p class="card-price mb-0">80 ₽</p>
                         </div>
                     </div>
                 </div>
@@ -233,8 +321,6 @@
         </div>
     </div>
 </div>
-
-
 
 
 <!--footer-->

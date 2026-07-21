@@ -43,6 +43,9 @@
                         <a class="nav-link nav-link-custom" aria-current="page" href="#">Главная</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link nav-link-custom" aria-current="page" href="#">О нас</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link nav-link-custom" href="menu.html">Меню</a>
                     </li>
                     <li class="nav-item">
@@ -54,9 +57,9 @@
                     <li class="nav-item">
                         <a class="nav-link nav-link-custom" href="#">Доставка</a>
                     </li>
-                    <li class="nav-item mt-4 pt-2">
+                    <li class="nav-item">
                         <button
-                                class="btn text-white shadow btn-dynamic"
+                                class="btn text-white shadow btn-dynamic mt-2 mt-lg-0"
                                 style="background-color:#6d6d36;"
                                 data-bs-toggle="modal"
                                 data-bs-target="#phoneModal">
@@ -76,7 +79,7 @@
 
         <div class="col-12 col-md-3 col-lg-3 d-flex flex-column text-center">
 
-            <p class="tiAmo mt-5" style="font-size:96px; color:#3E2723;">
+            <p class="tiAmo mt-0 mt-lg-5" style="font-size:96px; color:#3E2723;">
                 Ti AMO
             </p>
 
@@ -164,11 +167,15 @@
 </div>
 
 
-<div class="container-fluid d-flex justify-content-center tiAmo">
-    <a href="menu.html"
-       class="btn text-white shadow btn-dynamic"
-       style="background-color:#6d6d36;">
+<div class="container-fluid d-flex justify-content-center fst-italic lora-address">
+    <a href="menu.html">
+    <button
+            class="btn text-white shadow btn-dynamic mt-2 mt-lg-0"
+            style="background-color:#6d6d36;"
+            data-bs-toggle="modal"
+            data-bs-target="#phoneModal">
         Посмотреть полное меню
+    </button>
     </a>
 </div>
 
@@ -297,9 +304,18 @@
                 </div>
 
                 <button class="btn text-white shadow mt-auto"
-                        style="background-color:#6d6d36;">
+                        style="background-color:#6d6d36;"
+                        data-bs-toggle="modal"
+                        data-bs-target="#routeModal">
                     Построить маршрут
                 </button>
+
+                <!--<button class="btn text-white shadow mt-auto"
+        style="background-color:#6d6d36;"
+        data-bs-toggle="modal"
+        data-bs-target="#routeModal">
+    Построить маршрут
+</button>-->
 
             </div>
         </div>
@@ -400,13 +416,13 @@
                 <h5 class="mb-3">Контакты</h5>
 
                 <p class="mb-2">
-                    <i class="bi bi-geo-alt-fill"></i>
+                    <i class="bi bi-geo-alt m-2"></i>
                     г. Рыбница,<br>
                     ул. Вальченко 39/1
                 </p>
 
                 <p class="mb-2">
-                    <i class="bi bi-telephone-fill"></i>
+                    <i class="bi bi-phone m-2"></i>
                    + (373) 7777777
                 </p>
 
@@ -445,9 +461,9 @@
             integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
             crossorigin="anonymous"></script>
 
-<div class="modal fade" id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content">
+<div class="modal fade fst-italic lora-address"  id="phoneModal" tabindex="-1" aria-labelledby="phoneModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" >
+        <div class="modal-content bg-light" >
 
             <div class="modal-header">
                 <h5 class="modal-title" id="phoneModalLabel">Заказать столик</h5>
@@ -469,6 +485,54 @@
         </div>
     </div>
 </div>
+
+<div class="modal fade fst-italic lora-address" id="routeModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">
+                    Построить маршрут
+                </h5>
+
+                <button type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal">
+                </button>
+            </div>
+
+
+            <div class="modal-body text-center">
+
+                <p>
+                    Выберите приложение для навигации:
+                </p>
+
+
+                <!-- Яндекс карты -->
+                <a class="btn text-white w-100 mb-3"
+                   style="background-color:#3E2723;"
+                   target="_blank"
+                   href="https://yandex.md/maps/-/CTVXe26D">
+                    <i class="bi bi-geo-alt-fill"></i>
+                    Яндекс Карты
+                </a>
+
+
+                <!-- Google карты -->
+                <a class="btn btn-outline-dark w-100"
+                   target="_blank"
+                   href="https://maps.app.goo.gl/5Kepjg4y92BvbxsRA">
+                    <i class="bi bi-google"></i>
+                    Google Карты
+                </a>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
 </body>
 
 </html>

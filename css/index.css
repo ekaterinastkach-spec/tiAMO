@@ -97,41 +97,6 @@
     height: auto;
 }
 
-/* Градиент сверху */
-.photo-wrapper::before {
-    content: "";
-    position: absolute;
-    inset: 0;
-    background: linear-gradient(
-        to top,
-        transparent 90%,
-        rgba(245,238,230,.1) 92%,
-        rgba(245,238,230,.2) 94%,
-        rgba(245,238,230,.4) 96%,
-        rgba(245,238,230,.7) 98%,
-        #f5eee6 100%
-    ),
-    linear-gradient(
-            to left,
-            transparent 90%,
-                    rgba(245,238,230,.1) 92%,
-                    rgba(245,238,230,.2) 94%,
-                    rgba(245,238,230,.4) 96%,
-                    rgba(245,238,230,.7) 98%,
-                    #f5eee6 100%
-        ),
-        linear-gradient(
-                to bottom,
-                transparent 90%,
-                        rgba(245,238,230,.1) 92%,
-                        rgba(245,238,230,.2) 94%,
-                        rgba(245,238,230,.4) 96%,
-                        rgba(245,238,230,.7) 98%,
-                        #f5eee6 100%
-            );
-    pointer-events: none;
-}
-
 .btn-dynamic {
     background-color: #6d6d36;
     color: white;
